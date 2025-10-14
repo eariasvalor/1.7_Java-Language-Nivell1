@@ -14,6 +14,11 @@ public class WorkerOnline extends Worker {
         return result;
     }
 
+    @Deprecated
+    public void absurdMethod(){
+        System.out.println("This method is the epitome of absurdity.");
+    }
+
     @Override
     public String toString() {
         return super.toString();

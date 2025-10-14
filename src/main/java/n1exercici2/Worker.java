@@ -41,6 +41,11 @@ public class Worker {
         return result;
     }
 
+    @Deprecated
+    public void oldMethod(){
+        System.out.println("This is a deprecated method.");
+    }
+
     @Override
     public String toString() {
         return "Worker{" +

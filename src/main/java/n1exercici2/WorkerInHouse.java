@@ -14,6 +14,11 @@ public class WorkerInHouse extends Worker {
         return result;
     }
 
+    @Deprecated
+    public void unusedMethod(){
+        System.out.println("This method is not used.");
+    }
+
     @Override
     public String toString() {
         return super.toString();
