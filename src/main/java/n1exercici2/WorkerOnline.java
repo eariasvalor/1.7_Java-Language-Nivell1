@@ -9,6 +9,9 @@ public class WorkerOnline extends Worker {
 
     @Override
     public double calculateSalary(double hours) {
+        if(hours <= 0) {
+            throw new IllegalArgumentException("Invalid data: number must be greater than 0.");
+        }
         double result = (hours * super.getPriceHour()) + INTERNET_MONTHLY_RATE;
 
         return result;

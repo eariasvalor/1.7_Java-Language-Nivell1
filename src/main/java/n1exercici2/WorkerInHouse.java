@@ -9,6 +9,9 @@ public class WorkerInHouse extends Worker {
 
     @Override
     public double calculateSalary(double hours) {
+        if(hours <= 0) {
+            throw new IllegalArgumentException("Invalid data: number must be greater than 0.");
+        }
         double result = (hours * super.getPriceHour()) + GASOLINE_MONTHLY_EXPENSE;
 
         return result;
