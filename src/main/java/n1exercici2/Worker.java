@@ -46,6 +46,11 @@ public class Worker {
         return result;
     }
 
+    @Deprecated
+    public void oldMethod(){
+        System.out.println("This is an old method.");
+    }
+
     public <T> void validate(T... args) {
         for (Object arg : args) {
             if (arg == null) {

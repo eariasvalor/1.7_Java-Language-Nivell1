@@ -46,6 +46,8 @@ public class Worker {
         return result;
     }
 
+
+
     public <T> void validate(T... args) {
         for (Object arg : args) {
             if (arg == null) {
